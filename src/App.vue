@@ -7,7 +7,7 @@
 import editor from './components/markdown-editer'
 import 'highlightjs/styles/github.css'
 import hljs from 'highlightjs'
-const content = require('../README.md')
+const content = require('../SAMPLE.md')
 export default {
   components: { editor },
   data () {

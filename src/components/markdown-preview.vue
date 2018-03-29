@@ -4,6 +4,7 @@
 
 <script>
 import markdownIt from 'markdown-it'
+import markdownItPuml from 'markdown-it-plantuml'
 export default {
   props: ['content', 'options'],
   data () {
@@ -40,7 +41,7 @@ export default {
         breaks: true,
         ...this.options
       }
-      this.markdownit = markdownIt(options)
+      this.markdownit = markdownIt(options).use(markdownItPuml)
       this.renderIt()
     }
   },
